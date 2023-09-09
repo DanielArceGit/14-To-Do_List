@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-List</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="mt-5 me-5 mb-5 ms-5 pt-5 pe-5 pb-5 ps-5">
+        <div>
+            <h1>To-do List</h1>
+            <hr>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" 
+                  id="inputGroup-sizing-default">
+                  Tarea
+            </span>
+            <input type="text"
+                   id="input"
+                   class="form-control" 
+                   aria-label="Sizing example input" 
+                   aria-describedby="inputGroup-sizing-default">
+            <button id="add-task-button"
+                    type="button" 
+                    class="btn btn-success">
+                    Agregar Tarea
+            </button>
+        </div>
+
+        <div class="register-container">
+            <div class="registerTask">
+                <p>Total: 
+                    <span 
+                    id="totalTasks">
+                    </span>
+                </p>
+                <p>Realizadas: 
+                    <span 
+                    id="completedTasks">
+                </span>
+            </p>
+            </div>
+
+            <div class="list-container">
+                <div class="task">
+                    <p>ID</p>
+                    <p class="ms-5">
+                        Tareas
+                    </p>
+                </div>
+                    <div id="list">
+                    </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- script -->
+    <script src="./assets/js/script.js">
+    </script>
+</body>
+</html>

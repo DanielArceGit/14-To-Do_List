@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+main {
+    border: 1px solid black;
+    background-color: rgb(228, 228, 228);
+}
+.register-container{
+    display: flex;
+    justify-content: space-around;
+}
+.list-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.registerTask {
+    display: flex;
+    flex-direction: column;
+}
+.list {
+    display: grid;
+    justify-content: space-between;
+}
+.task {
+    display: flex;
+    justify-content: flex-start;
+    flex: 4; 
+}
+.task p {
+    display: flex;
+    align-items: center;
+}
+.list p span {
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+}
+
